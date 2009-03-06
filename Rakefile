@@ -49,3 +49,10 @@ task :gemspec do
     file.puts spec.to_ruby
   end
 end
+
+desc "Run spec"
+task :spec do
+  sh "spec --color spec"
+end
+
+task :default => :spec

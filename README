@@ -1,4 +1,12 @@
 merb_activesupport
 ==================
 
-A plugin for the Merb framework that provides ...
+A plugin for the Merb framework that provides a way to load ActiveSupport partially.
+
+Setting:
+  Merb::Plugins.config[:merb_activesupport][:only] = [:try]
+
+Available Keys:
+  merb -i
+  >> Merb::ActiveSupport.available_exts.keys
+  #=> Array of available keys
